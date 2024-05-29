@@ -1,0 +1,116 @@
+<div>
+  <app-top-navbar [hidden]="virtualRouter.routerActive=='top-navbar'"></app-top-navbar>
+  <app-login [hidden]="virtualRouter.routerActive=='login'"></app-login>
+  <app-footer [hidden]="virtualRouter.routerActive=='footer'"></app-footer>
+
+  <!-- <app-vertical-nav [hidden]="virtualRouter.routerActive=='settings'"></app-vertical-nav>
+  <app-file-manager [hidden]="virtualRouter.routerActive!=='file-manager'"></app-file-manager> -->
+</div>
+<div class="scroll-up">
+  <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</div>
+
+<!-- Preloader Start -->
+
+
+<!-- Offcanvas Area Start -->
+<div class="fix-area">
+  <div class="offcanvas__info">
+      <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+              <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo">
+                      <a href="index.html">
+                          <img src="assets/casa/img/logo/header-logo.png" alt="logo-img">
+                      </a>
+                  </div>
+                  <div class="offcanvas__close">
+                      <button>
+                      <i class="fas fa-times"></i>
+                      </button>
+                  </div>
+              </div>
+
+              <div class="mobile-menu fix mb-3"></div>
+              <div class="offcanvas__contact">
+                  <h4>Contact Info</h4>
+                  <ul>
+                      <li class="d-flex align-items-center">
+                          <div class="offcanvas__contact-icon">
+                              <i class="fal fa-map-marker-alt"></i>
+                          </div>
+                          <div class="offcanvas__contact-text">
+                              <a target="_blank" href="index.html#">Main Street, Melbourne, Australia</a>
+                          </div>
+                      </li>
+                      <li class="d-flex align-items-center">
+                          <div class="offcanvas__contact-icon mr-15">
+                              <i class="fal fa-envelope"></i>
+                          </div>
+                          <div class="offcanvas__contact-text">
+                              <a href="mailto:">sssss<span class="mailto:">infooraxis.com</span></a>
+                          </div>
+                      </li>
+                      <li class="d-flex align-items-center">
+                          <div class="offcanvas__contact-icon mr-15">
+                              <i class="fal fa-clock"></i>
+                          </div>
+                          <div class="offcanvas__contact-text">
+                              <a target="_blank" href="index.html#">Mod-friday, 09am -05pm</a>
+                          </div>
+                      </li>
+                      <li class="d-flex align-items-center">
+                          <div class="offcanvas__contact-icon mr-15">
+                              <i class="far fa-phone"></i>
+                          </div>
+                          <div class="offcanvas__contact-text">
+                              <a href="tel:+11002345909">+11002345909</a>
+                          </div>
+                      </li>
+                  </ul>
+                  <div class="header-button mt-4">
+                      <a href="#" class="theme-btn text-center">
+                          Contact Us
+                      </a>
+                  </div>
+                  <div class="social-icon d-flex align-items-center">
+                      <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="index.html#"><i class="fab fa-twitter"></i></a>
+                      <a href="index.html#"><i class="fab fa-youtube"></i></a>
+                      <a href="index.html#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="offcanvas__overlay"></div>
+
+<!-- Header Top Start -->
+<div class="header-top-section section-bg fix">
+  <div class="container">
+      <div class="header-top-wrapper">
+          <ul class="contact-list">
+              <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  6391 Elgin St. Celina, 10299
+              </li>
+          </ul>
+          <div class="top-right">
+              <ul class="contact-list">
+                  <li>
+                      <a href="mailto:" class="link"></a>
+                  </li>
+              </ul>
+              <div class="social-icon d-flex align-items-center">
+                  <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="index.html#"><i class="fab fa-twitter"></i></a>
+                  <a href="index.html#"><i class="fab fa-vimeo-v"></i></a>
+                  <a href="index.html#"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
