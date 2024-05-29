@@ -829,7 +829,7 @@ input.main-search-input::placeholder {
   height: 100%;
   content: "";
   background-color: var(--theme);
-  left: 60%;
+  left: 50%;
   -webkit-clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0 100%);
           clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0 100%);
   z-index: -1;

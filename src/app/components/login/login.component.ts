@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
 import { PocketAuthService } from '@app/services/pocket-auth.service';
 import { GlobalService } from '@app/services/global.service';
@@ -13,7 +13,7 @@ import { ScriptService } from '@app/services/script.service';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule,ReactiveFormsModule,NgxSpinnerModule],
+  imports: [CommonModule,ReactiveFormsModule,NgxSpinnerModule, FormsModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   returnUrl: any;
   public isLogged =false;
   message:any="Error en datos de acceso"; 
+  selected: any;
 
 
   constructor(

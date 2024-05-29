@@ -11,6 +11,17 @@ import { LoginComponent } from './components/login/login.component';
 import { FileManagerComponent } from './components/file-manager/file-manager.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/ui/footer/footer.component';
+import { NgxDatesPickerModule } from 'ngx-dates-picker';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
+import { ContactComponent } from './components/contact/contact.component';
+import { ServicesComponent } from './components/services/services.component';
+import { Services2Component } from './components/services2/services2.component';
+import { Services1Component } from './components/services1/services1.component';
+import { Services3Component } from './components/services3/services3.component';
+import { AboutComponent } from './components/about/about.component';
+import { Gallery } from 'ng-gallery';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 @Component({
@@ -24,7 +35,16 @@ import { FooterComponent } from './components/ui/footer/footer.component';
     TopNavbarComponent,
     LoginComponent,
     FileManagerComponent,
-    FooterComponent
+    FooterComponent,
+    NgxDaterangepickerMd,
+    ContactComponent,
+    ServicesComponent,
+    Services2Component,
+    Services1Component,
+    Services3Component,
+    AboutComponent,
+    GalleryComponent
+    
     
   ],
   templateUrl: './app.component.html',

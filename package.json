@@ -25,6 +25,8 @@
     "ng-gallery": "^11.0.0",
     "ng-multiselect-dropdown": "^1.0.0",
     "ngx-awesome-uploader": "^17.0.2",
+    "ngx-daterangepicker-material": "^6.0.4",
+    "ngx-dates-picker": "^9.0.2",
     "ngx-device-detector": "^7.0.0",
     "ngx-spinner": "^16.0.2",
     "ngx-ui-loader": "^1.1.5",
