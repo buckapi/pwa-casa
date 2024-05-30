@@ -23,9 +23,7 @@ export class GlobalService {
   private apirestUrl = 'https://db.buckapi.com:8090/api/';
   clientes: any[] = [];
   documents: any[] = [];
-  filteredDocuments: any[] = [];
   configs: any[] = [];
-  selectedTema="";
 status:string="";
   info: any[] = [];
   categories: any[] = [];

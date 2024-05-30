@@ -38,17 +38,11 @@
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class=" active menu-thumb">
-                                            <a href="index.html">
+                                            <a (click)="virtualRouter.setRoute('home')" >
                                             Home 
                                             </a>
                                         </li>
-                                        <li class=" active d-xl-none">
-                                            <a href="index.html" class="border-none">
-                                               Home
-                                           
-                                            </a>
-                                            
-                                        </li>
+                                      
                                         <li>
                                             <a (click)="virtualRouter.setRoute('about')">About</a>
                                         </li>

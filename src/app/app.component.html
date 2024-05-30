@@ -1,14 +1,14 @@
 <div>
-  <app-top-navbar [hidden]="virtualRouter.routerActive=='top-navbar'"></app-top-navbar>
-  <app-home [hidden]="virtualRouter.routerActive=='home'"></app-home>
-  <app-about [hidden]="virtualRouter.routerActive=='about'"></app-about>
+  <app-top-navbar></app-top-navbar>
+  <app-home [hidden]="virtualRouter.routerActive!='home'"></app-home>
+  <app-about [hidden]="virtualRouter.routerActive!='about'"></app-about>
    <!--<app-contact [hidden]="virtualRouter.routerActive=='contact'"></app-contact>
   <app-services [hidden]="virtualRouter.routerActive=='services'"></app-services>
   <app-services1 [hidden]="virtualRouter.routerActive=='services1'"></app-services1>
   <app-services2 [hidden]="virtualRouter.routerActive=='services2'"></app-services2>
   <app-services3 [hidden]="virtualRouter.routerActive=='services3'"></app-services3>
   <app-gallery [hidden]="virtualRouter.routerActive=='galleapp-gallery'"></app-gallery> -->
-  <app-footer [hidden]="virtualRouter.routerActive=='footer'"></app-footer>
+  <app-footer></app-footer>
 
   
 </div>

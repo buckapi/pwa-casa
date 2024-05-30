@@ -83,7 +83,7 @@ export class AppComponent {
       .catch(error => console.log(error));
       this.global.getConfig();
       this.epicFunction();
-      this.global.isLogin();
+      // this.global.isLogin();
 
     }
     ngOnInit(): void {
