@@ -7,7 +7,6 @@ import { GlobalService } from './services/global.service'; // Asegúrate de que 
 import { ScriptService } from './services/script.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { TopNavbarComponent } from './components/ui/top-navbar/top-navbar.component';
-import { LoginComponent } from './components/login/login.component';
 import { FileManagerComponent } from './components/file-manager/file-manager.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/ui/footer/footer.component';
@@ -22,6 +21,7 @@ import { Services3Component } from './components/services3/services3.component';
 import { AboutComponent } from './components/about/about.component';
 import { Gallery } from 'ng-gallery';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @Component({
@@ -33,7 +33,6 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     CommonModule, 
     RouterOutlet,
     TopNavbarComponent,
-    LoginComponent,
     FileManagerComponent,
     FooterComponent,
     NgxDaterangepickerMd,
@@ -43,7 +42,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     Services1Component,
     Services3Component,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    HomeComponent
     
     
   ],
