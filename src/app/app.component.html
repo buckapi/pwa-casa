@@ -2,12 +2,12 @@
   <app-top-navbar></app-top-navbar>
   <app-home [hidden]="virtualRouter.routerActive!='home'"></app-home>
   <app-about [hidden]="virtualRouter.routerActive!='about'"></app-about>
-   <!--<app-contact [hidden]="virtualRouter.routerActive=='contact'"></app-contact>
-  <app-services [hidden]="virtualRouter.routerActive=='services'"></app-services>
-  <app-services1 [hidden]="virtualRouter.routerActive=='services1'"></app-services1>
-  <app-services2 [hidden]="virtualRouter.routerActive=='services2'"></app-services2>
-  <app-services3 [hidden]="virtualRouter.routerActive=='services3'"></app-services3>
-  <app-gallery [hidden]="virtualRouter.routerActive=='galleapp-gallery'"></app-gallery> -->
+   <app-contact [hidden]="virtualRouter.routerActive!='contact'"></app-contact>
+  <app-services [hidden]="virtualRouter.routerActive!='services'"></app-services>
+  <app-services1 [hidden]="virtualRouter.routerActive!='services1'"></app-services1>
+  <app-services2 [hidden]="virtualRouter.routerActive!='services2'"></app-services2>
+  <app-services3 [hidden]="virtualRouter.routerActive!='services3'"></app-services3>
+  <app-gallery [hidden]="virtualRouter.routerActive!='gallery'"></app-gallery>
   <app-footer></app-footer>
 
   
@@ -18,6 +18,15 @@
   </svg>
 </div>
 
+<div class="whatsapp-button">
+    <a href="https://wa.me/1234567890" target="_blank">
+      <svg class="whatsapp-icon svg-content" width="100%" height="100%" viewBox="0 0 32 32">
+        <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.837 0.748 5.551 2.173 7.948l-2.273 6.52 6.708-2.207c2.333 1.192 4.867 1.832 7.392 1.832 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.12c-2.29 0-4.545-0.596-6.545-1.72l-0.472-0.27-3.976 1.31 1.284-3.692-0.295-0.485c-1.324-2.192-2.016-4.708-2.016-7.263 0-7.292 5.935-13.12 13.12-13.12s13.12 5.828 13.12 13.12-5.935 13.12-13.12 13.12z"></path>
+        <path d="M24.124 18.748c-0.392-0.197-2.324-1.147-2.685-1.278s-0.621-0.197-0.884 0.197-1.014 1.278-1.242 1.541-0.455 0.296-0.847 0.099c-0.392-0.197-1.655-0.607-3.152-1.938-1.162-1.035-1.947-2.315-2.173-2.707-0.227-0.392-0.024-0.607 0.173-0.803 0.177-0.176 0.392-0.45 0.588-0.676 0.197-0.227 0.262-0.392 0.392-0.647s0.065-0.486-0.033-0.676c-0.099-0.197-0.884-2.135-1.214-2.934-0.318-0.768-0.643-0.664-0.884-0.664-0.227-0.017-0.484-0.017-0.74-0.017s-0.676 0.099-1.032 0.45c-0.358 0.358-1.358 1.328-1.358 3.24s1.392 3.748 1.588 4.012c0.197 0.262 2.724 4.145 6.596 5.81 0.922 0.397 1.64 0.634 2.198 0.81 0.922 0.293 1.76 0.252 2.424 0.154 0.74-0.109 2.324-0.951 2.655-1.871s0.331-1.707 0.231-1.871c-0.098-0.173-0.358-0.275-0.75-0.471z"></path>
+      </svg>
+    </a>
+  </div>
+  
 <!-- Preloader Start -->
 
 
