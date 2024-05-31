@@ -1,0 +1,32 @@
+.portfolio-items {
+    position: relative;
+}
+
+.portfolio-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.portfolio-items:hover .portfolio-content {
+    display: block;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}

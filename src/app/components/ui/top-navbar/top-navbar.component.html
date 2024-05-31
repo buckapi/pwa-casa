@@ -11,7 +11,7 @@
             <div class="top-right">
                 <ul class="contact-list">
                     <li>
-                        <a href="mailto:casaremodellingwallpaper&#64;gmail.com.com" class="link">casaremodellingwallpaper&#64;gmail.com.com</a>
+                        <a href="mailto:casaremodellingwallpaper&#64;gmail.com" class="link">casaremodellingwallpaper&#64;gmail.com</a>
                     </li>
                 </ul>
                 <div class="social-icon d-flex align-items-center">
@@ -47,11 +47,16 @@
                                             <a (click)="virtualRouter.setRoute('about')">About</a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a>
                                                 Services
-                                              
+                                                <i class="fas fa-angle-down"></i>
                                             </a>
-                                           
+                                            <ul class="submenu">
+                                                <li><a (click)="virtualRouter.setRoute('services1')">Interior Painting</a></li>
+                                                <li><a (click)="virtualRouter.setRoute('services2')">Wallpaper installation or repair</a></li>
+                                                <li><a (click)="virtualRouter.setRoute('services3')">Wallpaper removal</a></li>
+
+                                            </ul>
                                         </li>
                                         <li>
                                             <a (click)="virtualRouter.setRoute('gallery')">

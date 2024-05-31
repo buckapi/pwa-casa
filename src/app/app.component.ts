@@ -22,6 +22,7 @@ import { AboutComponent } from './components/about/about.component';
 import { Gallery } from 'ng-gallery';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { HomeComponent } from './components/home/home.component';
+import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
 
 
 @Component({
@@ -43,7 +44,8 @@ import { HomeComponent } from './components/home/home.component';
     Services3Component,
     AboutComponent,
     GalleryComponent,
-    HomeComponent
+    HomeComponent,
+    PhotoGalleryModule
     
     
   ],

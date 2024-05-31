@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GlobalService } from '@app/services/global.service';
+import { virtualRouter } from '@app/services/virtualRouter.service';
 
 @Component({
   selector: 'app-services1',
@@ -8,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './services1.component.css'
 })
 export class Services1Component {
-
+constructor (
+  public global: GlobalService,
+  public virtualRouter: virtualRouter
+){}
 }
