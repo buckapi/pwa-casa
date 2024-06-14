@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 0;
+    padding: 38px 0;
 }
 .header-1.header-2 .mega-menu-wrapper .header-main .main-menu ul li a {
     color: #212529;
@@ -23,3 +23,12 @@
 .sticky.header-2 {
     background-color: #ffffff;
 }
+@media (max-width: 767px) {
+    .header-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+    }
+  }
+  

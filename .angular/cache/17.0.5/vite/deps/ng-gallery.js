@@ -86,12 +86,12 @@ import {
   ɵɵtextInterpolate,
   ɵɵviewQuery
 } from "./chunk-QCIJCPJP.js";
-import "./chunk-VWZL6L3B.js";
 import {
   animationFrameScheduler,
   fromEvent,
   merge
 } from "./chunk-I74UQOMN.js";
+import "./chunk-VWZL6L3B.js";
 import {
   BehaviorSubject,
   EMPTY,
@@ -180,10 +180,16 @@ var PlatformModule = _PlatformModule;
     args: [{}]
   }], null, null);
 })();
+var RtlScrollAxisType;
+(function(RtlScrollAxisType2) {
+  RtlScrollAxisType2[RtlScrollAxisType2["NORMAL"] = 0] = "NORMAL";
+  RtlScrollAxisType2[RtlScrollAxisType2["NEGATED"] = 1] = "NEGATED";
+  RtlScrollAxisType2[RtlScrollAxisType2["INVERTED"] = 2] = "INVERTED";
+})(RtlScrollAxisType || (RtlScrollAxisType = {}));
 var rtlScrollAxisType;
 function getRtlScrollAxisType() {
   if (typeof document !== "object" || !document) {
-    return 0;
+    return RtlScrollAxisType.NORMAL;
   }
   if (rtlScrollAxisType == null) {
     const scrollContainer = document.createElement("div");
@@ -200,10 +206,10 @@ function getRtlScrollAxisType() {
     contentStyle.height = "1px";
     scrollContainer.appendChild(content);
     document.body.appendChild(scrollContainer);
-    rtlScrollAxisType = 0;
+    rtlScrollAxisType = RtlScrollAxisType.NORMAL;
     if (scrollContainer.scrollLeft === 0) {
       scrollContainer.scrollLeft = 1;
-      rtlScrollAxisType = scrollContainer.scrollLeft === 0 ? 1 : 2;
+      rtlScrollAxisType = scrollContainer.scrollLeft === 0 ? RtlScrollAxisType.NEGATED : RtlScrollAxisType.INVERTED;
     }
     scrollContainer.remove();
   }
